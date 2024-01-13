@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Logo Animation</title>
+  <style>
+    body {
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .logo {
+      display: inline-block;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      font-size: 36px;
+      color: #e50914;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      animation: logoAnimation 2s infinite;
+    }
+
+    @keyframes logoAnimation {
+      0%, 100% {
+        color: #e50914;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+      25% {
+        color: #fff;
+        text-shadow: none;
+      }
+      50% {
+        color: #e50914;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+      75% {
+        color: #fff;
+        text-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">NETFLIX</div>
+</body>
+</html>
